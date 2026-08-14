@@ -5,8 +5,8 @@ import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 
 proyecto = "prueba-covalto-data"
-entrada = "gs://covalto-transacciones-fabian/2026-08-13/transacciones.csv"
-temp = "gs://covalto-temp-fabian/temp"
+entrada = "gs://covalto-transacciones/2026-08-13/transacciones.csv"
+temp = "gs://covalto-temp/temp"
 
 columnas = ["id_transaccion", "id_cliente", "monto", "tipo", "fecha_transaccion", "moneda"]
 esquema_raw = ",".join(f"{c}:STRING" for c in columnas)
@@ -55,7 +55,7 @@ def run():
     options = PipelineOptions(
         runner="DataflowRunner", #DirectRunner para correr local, DataflowRunner para correr en la nube
         project=proyecto,
-        region="us-central1",
+        region="us-east1",
         temp_location=temp,
         job_name="transacciones",
     )
