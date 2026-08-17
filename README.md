@@ -4,14 +4,6 @@ Pipeline batch que ingiere un archivo diario de transacciones financieras, lo li
 
 ---
 
-## Contexto
-
-En Covalto llega diariamente un archivo CSV con las transacciones del día que necesita procesarse para dejarlo disponible en el warehouse para reportería y análisis de riesgo. El proceso hoy no está estructurado, no hay trazabilidad de lo que entra vs lo que sale, y los registros con errores se descartan sin dejar rastro.
-
-Este pipeline atiende ese vacío: procesa el archivo, separa lo válido de lo inválido, guarda todo con capa por etapa, y deja los errores accesibles para revisión.
-
----
-
 ## Arquitectura
 
 ```
