@@ -2,10 +2,6 @@
 
 Pipeline batch que ingiere un archivo diario de transacciones financieras, lo limpia, lo valida y lo entrega en BigQuery listo para consumo de los equipos de Riesgo y Finanzas.
 
-Prueba técnica · Fabián Gómez · Agosto 2026
-
-Repo: https://github.com/perch1n/prueba-covalto
-
 ---
 
 ## Contexto
