@@ -100,7 +100,7 @@ prueba-covalto/
 
 ## Cómo correrlo
 
-Requisitos: Python 3.11+, `gcloud` instalado, cuenta GCP con billing activo, Dataflow y BigQuery habilitados.
+Requisitos: Python 3.11+, `gcloud` instalado, cuenta GCP, Dataflow y BigQuery habilitados.
 
 ```bash
 # clonar
